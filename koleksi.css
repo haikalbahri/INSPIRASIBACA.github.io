@@ -1,0 +1,84 @@
+body {
+  background-color: #00985B;
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style untuk navbar */
+.navbar {
+  background-color: #FFF6F6; /* Warna latar belakang */
+  display: flex;
+  justify-content: space-between; /* Membuat jarak di antara elemen */
+  align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+  padding: 30px 20px; /* Padding untuk navbar */
+  width: 100%; /* Menjadikan navbar full-width */
+  position: fixed; /* Membuat navbar tetap di bagian atas saat di-scroll */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  z-index: 1000; /* Menentukan urutan tampilan */
+  margin-bottom: 20px; 
+}
+
+/* Style untuk teks INSPIRASIBACA */
+.brand {
+  color: #00985B; /* Warna teks */
+  font-weight: bold; /* Tebal teks */
+  text-decoration: none; /* Tanpa garis bawah */
+  font-size: 24px; /* Ukuran teks */
+  line-height: normal;
+  font-family: Poppins;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Style untuk link menu navbar */
+.navbar a {
+  color: #00985B; /* Warna teks */
+  text-decoration: none; /* Tanpa garis bawah */
+  padding: 14px 20px; /* Padding untuk menu */
+}
+
+/* Style hover pada link menu navbar */
+.navbar a:hover {
+  background-color: #ddd; /* Warna latar belakang saat hover */
+  color: black; /* Warna teks saat hover */
+}
+
+/* Style untuk konten setelah navbar */
+.content {
+  padding-top: 70px; /* Padding atas untuk konten agar tidak tertutup oleh navbar */
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-around; /* Mengubah jarak antar gambar */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px; /* Menyesuaikan ukuran gambar */
+  height: auto;
+  border-radius: 8px; /* Memberi sudut membulat pada gambar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease-in-out; /* Animasi saat hover */
+  margin: 10px; /* Menambahkan jarak di sekeliling gambar */
+}
+
+img:hover {
+  transform: scale(1.1); /* Perbesar gambar saat di hover */
+}
+
